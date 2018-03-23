@@ -1,0 +1,24 @@
+TO install Radium a thrid party tool to allow us to use sudo selectors and media query with inline styles
+npm install --save radium
+
+
+Enablling CSS Module 
+Step 1: npm run eject
+Then you will see script and config folder
+Step 2:open webpack.config.dev and webpack.config.prod Then find test: /\.css$/ and under options: section below
+importLoders: 1, add modules : true and localIdentName : '[name]__[local]__[hash:base64:5]'
+
+
+Using CSS Modules in create-react-app Projects: https://medium.com/nulogy/how-to-use-css-modules-with-create-react-app-9e44bec2b5c2
+More information about CSS Modules: https://github.com/css-modules/css-modules
+
+Error Boundaries: https://reactjs.org/docs/error-boundaries.html
+
+To set props type we receive in component
+npm install --save prop-types
+
+
+State & Lifecycle: https://reactjs.org/docs/state-and-lifecycle.html
+PropTypes: https://reactjs.org/docs/typechecking-with-proptypes.html
+Higher Order Components: https://reactjs.org/docs/higher-order-components.html
+Refs: https://reactjs.org/docs/refs-and-the-dom.html
