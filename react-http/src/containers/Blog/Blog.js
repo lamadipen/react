@@ -23,7 +23,11 @@ class Blog extends Component {
                 }
             });
             this.setState({posts: updatedPosts});
-        });
+        })
+            .catch(error => {
+                console.log(error);
+                this.setState({error: true});
+            });
     }
     render () {
         const posts = this.state.posts.map(post => {
